@@ -22,13 +22,10 @@ body, html {
   height: 100%;
   background-color: $background-color;
   scroll-behavior: smooth;
+  overflow: hidden;
   // background-image: url(/img/baner-bg.jpg);
 }
 
-.wrapper{
-  width:100vw;
-  overflow: hidden;
-}
 .gray-bg{
     display: none;
       position: absolute;
