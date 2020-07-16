@@ -12,6 +12,7 @@
   right: 30px;
   cursor: pointer;
   pointer-events: none;
+  z-index: 99;
 }
 
 .to-top:hover {
