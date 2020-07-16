@@ -358,6 +358,30 @@ main {
   width: 70%;
 }
 
+.call-us {
+  background-color: #116466;
+}
+
+.call-us p {
+  color: #ffcb9a;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.call-us p a, .call-us p span {
+  text-decoration: none;
+  color: #ffb167;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.call-us p a:hover {
+  border-bottom: 2px solid #ffb167;
+  font-weight: 700;
+}
+
 @media (max-width: 414px) and (orientation: portrait) {
   .banner {
     background-size: 100% 100%;
