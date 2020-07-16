@@ -607,4 +607,22 @@ main .office-table table {
     line-height: 30px;
   }
 }
+
+main div .breadcrumb {
+  background-color: #f1fffb;
+}
+
+main div h2 {
+  font-size: 2em;
+  color: #116466;
+  font-family: "Playfair Display", serif;
+  text-shadow: 4px 4px 9px rgba(150, 150, 150, 0.7);
+  letter-spacing: 2px;
+}
+
+main div p, main div ul {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
 /*# sourceMappingURL=style.css.map */

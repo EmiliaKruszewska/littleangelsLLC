@@ -1,0 +1,21 @@
+main{
+    div{
+        .breadcrumb{
+            background-color: $background-color;
+        }
+    }
+    div{
+        h2{
+            font-size: 2em;
+            color: $navigation-color;
+            font-family: $playfair-display;
+            text-shadow: 4px 4px 9px rgba(150, 150, 150, 0.7);
+            letter-spacing: 2px;
+        }
+        p,ul{
+            font-family: $raleway;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+        }
+    }
+}
