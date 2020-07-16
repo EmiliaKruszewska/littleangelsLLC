@@ -398,4 +398,37 @@ main {
     width: 70%;
   }
 }
+
+.owner {
+  font-family: "Raleway", sans-serif;
+  color: #116466;
+}
+
+.owner div .owner-photo {
+  width: 200px;
+}
+
+.owner div .owner-photo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.owner div .owner-info {
+  padding: 10px 10px;
+  margin-left: 30px;
+}
+
+.owner div .owner-info p {
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .owner div .owner-photo {
+    left: calc(50% - 70px);
+    width: 150px;
+  }
+  .owner div .owner-info {
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

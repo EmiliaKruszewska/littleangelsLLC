@@ -1,0 +1,123 @@
+.owner{
+    font-family: $raleway;
+    color: $navigation-color;
+    div{
+        .owner-photo{
+            width:200px;
+            
+            img{
+                width:100%;
+                border-radius: 50%;
+            }
+        }
+        .owner-info{
+            padding: 10px 10px;
+            margin-left: 30px;
+            p{
+                margin:0;
+            }
+            
+        }
+    }
+}
+
+@media(max-width:575px){
+    .owner{
+        div{
+            .owner-photo{
+                left:calc(50% - 70px);
+                width:150px;
+            }
+            .owner-info{
+                margin: 0;
+            }
+        }
+    }
+}
+// .owner-container{
+//     padding-top: 20px;
+
+//     .owner-photo{
+//         width:150px;
+//         align-self: center;
+        
+//         img{
+//             width: 100%;
+//             border-radius: 50%;
+            
+//         }
+//     }
+
+//     .owner-info{
+//       
+//     
+//         padding: 10px 10px;
+//         margin-left: 50px;
+        
+//         h2{
+//             font-size: 1.2em;
+//             padding-top: 10px;
+//         }
+//         p{
+//             padding: 5px;
+//         }
+//     }
+// }
+// hr{
+// position: relative;
+// width: 60%;
+// left: 20%;
+// border: 1px solid #d3d3d3;
+// margin-top:20px;
+// }
+
+// @media(max-width:1024px){
+// .owner-container{
+//     .owner-info{
+//         margin-left: 0;
+//     }
+// }
+// }
+// @media(max-width:414px) and (orientation:portrait){
+// .owner-container{
+//     .owner-photo{
+//         width: 120px;
+//     }
+//     .owner-info{
+//         padding: 0px 5px;
+
+//         h1{
+//             font-size: 1.2em;
+//         }
+//         h2{
+//             font-size: 1em;
+//         }
+//         p{
+//             font-size: 0.8em;
+//             padding:3px;
+//         }
+//     }
+// }
+// }
+// @media(max-width:823px) and (orientation:landscape){
+// .owner-container{
+//     .owner-photo{
+//         width: 120px;
+//     }
+//     .owner-info{
+//         padding: 0px 5px;
+
+//         h1{
+//             font-size: 1.2em;
+//         }
+//         h2{
+//             font-size: 1em;
+//         }
+//         p{
+//             font-size: 0.8em;
+//             padding:3px;
+//         }
+//     }
+// }
+// }
+
