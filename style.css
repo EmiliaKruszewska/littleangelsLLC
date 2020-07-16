@@ -34,7 +34,6 @@
 }
 
 body, html {
-  height: 100%;
   background-color: #f1fffb;
   scroll-behavior: smooth;
 }
@@ -284,11 +283,10 @@ main {
 
 @media (max-width: 414px) and (orientation: portrait) {
   header .navigation {
-    width: 200px;
-    left: -200px;
+    left: -350px;
   }
   header .navigation .menu {
-    width: 200px;
+    width: 350px;
   }
   header .navigation .menu .menu-item .n-drop, header .navigation .menu .menu-item .drop {
     font-size: 1em;
@@ -455,6 +453,82 @@ main {
   }
   .owner div .owner-info {
     margin: 0;
+  }
+}
+
+hr {
+  position: relative;
+  width: 60%;
+  left: 20%;
+  border: 1px solid #d3d3d3;
+  margin-top: 20px;
+}
+
+main .welcome {
+  font-family: "Playfair Display", serif;
+  line-height: 30px;
+  color: #2c3531;
+}
+
+main .welcome h1 {
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: #116466;
+  text-shadow: 4px 4px 9px rgba(150, 150, 150, 0.7);
+}
+
+main .welcome p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  line-height: 40px;
+  padding: 10px 12%;
+}
+
+@media (max-width: 1660px) {
+  main .welcome h1 {
+    line-height: 40px;
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 1024px) {
+  main .welcome h1 {
+    line-height: 30px;
+    font-size: 2em;
+  }
+  main .welcome p {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  main .welcome h1 {
+    line-height: 50px;
+    font-size: 2em;
+  }
+  main .welcome p {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  main .welcome h1 {
+    line-height: 40px;
+    font-size: 1.5em;
+  }
+  main .welcome p {
+    font-size: 1em;
+    line-height: 30px;
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 736px) and (orientation: landscape) {
+  main .welcome h1 {
+    line-height: 45px;
+  }
+  main .welcome P {
+    line-height: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

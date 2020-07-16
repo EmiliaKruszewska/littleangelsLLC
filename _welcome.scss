@@ -1,0 +1,110 @@
+$playfair-display: 'Playfair Display', serif;
+$source-serif: 'Source Serif';
+$raleway: 'Raleway', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+$main-font-color: #2c3531;
+$navigation-color: rgb(17, 100, 102);
+
+main{
+    .welcome{
+        font-family: $playfair-display;
+        line-height: 30px;
+        color: $main-font-color;
+
+        h1{
+            font-size: 3em;
+            letter-spacing: 2px;
+            color: $navigation-color;
+            text-shadow: 4px 4px 9px rgba(150, 150, 150, 0.7);
+        }
+        p{
+            font-family: $raleway;
+            font-size: 1.5em;
+            line-height: 40px;
+            padding: 10px 12%;
+        }
+    }
+}
+
+    
+//     p:nth-of-type(1){
+//         font-size: 3em;
+//         font-weight: 700;
+//         letter-spacing: 2px;
+//         color: $navigation-color;
+//         text-shadow: 4px 4px 9px rgba(150, 150, 150, 0.7);
+//         margin-bottom: 30px;
+//     }
+//     p:nth-of-type(2){
+//         font-size: 1.5em;
+//         line-height: 40px;
+//         padding: 10px 12%;
+//     }
+// }
+@media(max-width:1660px){
+    main{
+        .welcome{
+            h1{
+                line-height: 40px;
+                font-size: 2.5em;
+            }
+        }
+    }
+    
+}
+@media(max-width:1024px){
+    main{
+        .welcome{
+            h1{
+                line-height: 30px;
+                font-size: 2em;
+            }
+            p{
+                font-size: 1.2em;
+            }
+        }
+    }
+  
+}
+@media(max-width:768px) and (orientation:portrait){
+    main{
+        .welcome{
+            h1{
+                 line-height: 50px;
+                 font-size: 2em;
+             }
+             p{
+                 font-size: 1.2em;
+             }
+         }
+    }
+
+}
+@media(max-width:414px) and (orientation:portrait){
+    main{
+        .welcome{
+            h1{
+                 line-height: 40px;
+                 font-size: 1.5em;
+             }
+             p{
+                 font-size: 1em;
+                 line-height: 30px;
+                 padding: 5px 0;
+             }
+         }
+    }
+}
+@media(max-width:736px) and (orientation:landscape){
+    main{
+        .welcome{
+            h1{
+                line-height: 45px;
+            }
+            P{
+                line-height: 30px;
+            }
+        }
+    }
+   
+}
