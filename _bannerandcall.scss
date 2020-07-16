@@ -1,0 +1,39 @@
+.banner{
+    box-sizing: border-box;
+    background-image: url(/img/light-blue.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    div{
+        text-align: center;
+        img{
+            padding:30px auto;
+            margin: 80px 0 30px 0;
+            width:70%;   
+        }
+    }
+}
+
+@media(max-width:414px) and (orientation:portrait){
+    .banner{
+        background-size:100% 100%;
+        div{
+            img{
+                margin: 70px 0 10px 0;
+                width:100%;
+            }
+        }         
+    }
+}
+@media(max-width:731px) and (orientation:landscape){
+    .banner{
+        div{
+            img{
+                margin: 70px 0 10px 0;
+                width:70%;
+            }
+        }         
+    }
+}
+  
+    

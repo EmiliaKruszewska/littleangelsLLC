@@ -11,13 +11,12 @@ body, html {
   height: 100%;
   background-color: #f1fffb;
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 .gray-bg {
   display: none;
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   top: 0;
   background-color: #000;
@@ -29,6 +28,7 @@ body, html {
 
 .gray-bg.active {
   display: block;
+  overflow: hidden;
 }
 
 header {
@@ -38,13 +38,14 @@ header {
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 99;
 }
 
 header .navigation {
   height: 60px;
   font-family: "Raleway", sans-serif;
-  left: 20%;
-  right: 20%;
+  left: 15%;
+  right: 15%;
 }
 
 header .navigation .menu {
@@ -149,14 +150,20 @@ header.active {
 }
 
 main {
-  height: 300vh;
+  height: 110vh;
 }
 
 @media (max-width: 1024px) {
   header .navigation {
-    width: 300px;
+    left: 7%;
+    right: 7%;
+  }
+}
+
+@media (max-width: 768px) {
+  header .navigation {
     margin: 0;
-    left: -400px;
+    left: -300px;
     -webkit-transition: 0.5s ease-out;
     transition: 0.5s ease-out;
     z-index: 99;
@@ -177,12 +184,10 @@ main {
     border-top: 1px solid #116466;
   }
   header .navigation .menu .menu-item .n-drop {
-    text-align: left;
     display: block;
     padding: 16px 20px;
   }
   header .navigation .menu .menu-item .drop {
-    text-align: left;
     display: block;
     padding: 16px 20px;
     position: relative;
@@ -193,7 +198,7 @@ main {
     height: 14px;
     width: 14px;
     background: #116466;
-    left: 20px;
+    left: calc(50% - 7px);
     bottom: -5px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -209,7 +214,6 @@ main {
     margin: 0;
   }
   header .navigation .menu .menu-item .smenu a {
-    text-align: left;
     padding: 16px 26px;
     color: #ffcb9a;
     background-color: none;
@@ -332,6 +336,42 @@ main {
   header .burger.active span:nth-of-type(3) {
     -webkit-transform: translateY(-8px) rotate(45deg);
             transform: translateY(-8px) rotate(45deg);
+  }
+}
+
+.banner {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(/img/light-blue.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.banner div {
+  text-align: center;
+}
+
+.banner div img {
+  padding: 30px auto;
+  margin: 80px 0 30px 0;
+  width: 70%;
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  .banner {
+    background-size: 100% 100%;
+  }
+  .banner div img {
+    margin: 70px 0 10px 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 731px) and (orientation: landscape) {
+  .banner div img {
+    margin: 70px 0 10px 0;
+    width: 70%;
   }
 }
 /*# sourceMappingURL=style.css.map */

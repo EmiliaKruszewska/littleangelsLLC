@@ -22,24 +22,25 @@ body, html {
   height: 100%;
   background-color: $background-color;
   scroll-behavior: smooth;
-  overflow: hidden;
   // background-image: url(/img/baner-bg.jpg);
 }
 
 .gray-bg{
     display: none;
       position: absolute;
-      height: 100vh;
+      height:100%;
       width:100vw;
       top:0;
       background-color: #000;
       opacity: 0.6;
       transition: all 0.3s ease;
       z-index: 98;
+      
     
   }
   .gray-bg.active{
     display: block;
+    overflow: hidden;
   }
 
   // page container
@@ -49,12 +50,13 @@ body, html {
     height:60px;
     box-shadow: 0 4px 12px rgba(black, 0.3);
     transition: 0.3s;
+    z-index: 99;
     
   .navigation {
     height:60px;
     font-family: $raleway;
-    left:20%;
-    right: 20%;
+    left:15%;
+    right: 15%;
       
       .menu {
         list-style: none;
@@ -160,16 +162,23 @@ body, html {
   }
 
   main{
-      height:300vh;
+      height:110vh;
   }
-         
-@media(max-width:1024px) {
+
+@media(max-width:1024px){
+  header{
+    .navigation{
+      left:7%;
+      right:7%;
+    }
+  }
+}
+@media(max-width:768px) {
   header{
     // position: fixed;
     .navigation{
-      width:300px;
       margin:0;
-      left:-400px;
+      left:-300px;
       transition: 0.5s ease-out;
       z-index: 99;
       .menu{
@@ -188,13 +197,11 @@ body, html {
           border-top: 1px solid $navigation-color;
   
           .n-drop{
-            text-align: left;
             display: block;
             padding: 16px 20px;
             
           }
           .drop{
-            text-align: left;
             display: block;
             padding: 16px 20px;
             position: relative;
@@ -205,7 +212,7 @@ body, html {
               height:14px;
               width:14px;
               background: $navigation-color;
-              left:20px;
+              left:calc(50% - 7px);
               bottom:-5px;
               transform: rotate(45deg);
               z-index: 99;
@@ -221,7 +228,6 @@ body, html {
             margin:0;
   
             a{
-              text-align: left;
               padding: 16px 26px;
               color: $nav-font-color;
               background-color: none;
