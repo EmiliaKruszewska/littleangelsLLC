@@ -7,12 +7,11 @@ $navigation-color: rgb(17, 100, 102);
 
 main{
     .welcome{
-        font-family: $playfair-display;
         line-height: 30px;
-        color: $main-font-color;
 
         h1{
             font-size: 3em;
+            font-family: $playfair-display;
             letter-spacing: 2px;
             color: $navigation-color;
             text-shadow: 4px 4px 9px rgba(150, 150, 150, 0.7);
