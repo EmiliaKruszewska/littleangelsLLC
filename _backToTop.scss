@@ -1,0 +1,24 @@
+.to-top {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(7, 100, 102, .9);
+    opacity: 0;
+    color: $nav-font-color;
+    transition: visibility 0.2s, opacity 0.2s;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    pointer-events: none;
+    
+    &:hover{
+        color: darken($nav-font-color, 30%);
+    }
+}
+
+.to-top.active{
+    bottom:32px;
+    pointer-events: auto;
+    opacity: 0.8;
+}
