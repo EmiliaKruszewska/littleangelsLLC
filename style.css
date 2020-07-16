@@ -557,6 +557,7 @@ main .office-table {
 }
 
 main .office-table table {
+  z-index: 95;
   left: calc(50% - 200px);
   width: 400px;
 }

@@ -17,6 +17,7 @@ main{
     .office-table{
         flex-basis:50%; 
         table{
+            z-index: 95;
             left:calc(50% - 200px);
             width: 400px;
         }
