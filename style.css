@@ -175,10 +175,6 @@ header.active {
   background-color: rgba(10, 57, 58, 0.9);
 }
 
-main {
-  height: 110vh;
-}
-
 @media (max-width: 1024px) {
   header .navigation {
     left: 7%;
@@ -624,5 +620,31 @@ main div p, main div ul {
   font-family: "Raleway", sans-serif;
   font-size: 1.1em;
   letter-spacing: 1px;
+}
+
+main div div h3 {
+  font-size: 1.7em;
+  color: #116466;
+  font-family: "Playfair Display", serif;
+  text-shadow: 4px 4px 9px rgba(150, 150, 150, 0.7);
+  letter-spacing: 2px;
+}
+
+main div img {
+  margin-left: 50px;
+  margin: 15px 0 15px 50px;
+}
+
+@media (max-width: 768px) {
+  main div img {
+    margin: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  main div img {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
