@@ -98,11 +98,11 @@ body, html {
                 
                 a{
                   display: block;
-                  background-color: darken(rgba(17, 100, 102, 0.9), 15%);
+                  background-color: darken($navigation-color, 15%);
                   
                   
                   &:hover {
-                    background-color: darken(rgba(17, 100, 102, 0.9), 10%);
+                    background-color: darken($navigation-color, 10%);
                   }
                 }
             }
@@ -150,7 +150,7 @@ body, html {
       }   
   }
   header.active{
-    background-color: darken(rgba(17, 100, 102, 0.9), 10%);
+    background-color: darken($navigation-color, 10%);
   }
 
   

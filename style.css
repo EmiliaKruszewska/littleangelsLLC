@@ -119,11 +119,11 @@ header .navigation .menu .menu-item:hover .smenu {
 
 header .navigation .menu .menu-item:hover .smenu a {
   display: block;
-  background-color: rgba(6, 36, 36, 0.9);
+  background-color: #062424;
 }
 
 header .navigation .menu .menu-item:hover .smenu a:hover {
-  background-color: rgba(10, 57, 58, 0.9);
+  background-color: #0a393a;
 }
 
 header .burger {
@@ -172,7 +172,7 @@ header .burger.active span:nth-of-type(3) {
 }
 
 header.active {
-  background-color: rgba(10, 57, 58, 0.9);
+  background-color: #0a393a;
 }
 
 @media (max-width: 1024px) {
@@ -555,6 +555,9 @@ main .office-table table {
 }
 
 @media (max-width: 1024px) {
+  main .slogan p:nth-of-type(1) {
+    font-size: 2em;
+  }
   main .slogan p:nth-of-type(2) {
     font-size: 1.2em;
   }
