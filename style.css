@@ -607,6 +607,34 @@ main .office-table table {
   }
 }
 
+footer {
+  background-color: #0a393a;
+}
+
+footer .regi div img {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 300px;
+}
+
+.copyright {
+  background-color: #062424;
+}
+
+@media (max-width: 991px) {
+  footer {
+    text-align: center;
+  }
+  footer .map {
+    padding: 10px;
+  }
+  footer .facebook {
+    padding: 10px;
+  }
+  footer .regi {
+    padding: 10px;
+  }
+}
+
 main div .breadcrumb {
   background-color: #f1fffb;
 }
