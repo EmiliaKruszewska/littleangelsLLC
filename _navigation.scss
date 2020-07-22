@@ -153,15 +153,8 @@ body, html {
 
   
 
-@media(max-width:1024px){
-  header{
-    .navigation{
-      left:7%;
-      right:7%;
-    }
-  }
-}
-@media(max-width:768px) {
+
+@media(max-width:1024px) {
   header{
     // position: fixed;
     .navigation{
