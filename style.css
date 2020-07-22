@@ -280,10 +280,10 @@ header.active {
 
 @media (max-width: 414px) and (orientation: portrait) {
   header .navigation {
-    left: -350px;
+    left: -300px;
   }
   header .navigation .menu {
-    width: 350px;
+    width: 300px;
   }
   header .navigation .menu .menu-item .n-drop, header .navigation .menu .menu-item .drop {
     font-size: 1em;
@@ -677,5 +677,29 @@ main div img {
   main div img {
     width: 90%;
   }
+}
+
+main .cloud {
+  position: relative;
+  background-color: #116466;
+  padding: 20px 30px;
+  border-radius: 15px 15px;
+}
+
+main .cloud q {
+  color: #ffcb9a;
+}
+
+main .cloud q::after {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background: #116466;
+  left: 8%;
+  bottom: -5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 99;
 }
 /*# sourceMappingURL=style.css.map */

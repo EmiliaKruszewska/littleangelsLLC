@@ -1,0 +1,26 @@
+main{
+    .cloud{
+        position: relative;
+        background-color: $navigation-color;
+        padding: 20px 30px;
+        border-radius: 15px 15px;
+        q{
+            color: $nav-font-color;
+
+            &::after{
+                content:"";
+                position: absolute;
+                height:14px;
+                width:14px;
+                background: $navigation-color;
+                left:8%;
+                bottom:-5px;
+                transform: rotate(45deg);
+                z-index: 99;
+            }
+        }
+        }
+        
+    
+    
+}
