@@ -690,7 +690,7 @@ main .cloud q {
   color: #ffcb9a;
 }
 
-main .cloud q::after {
+main .cloud::after {
   content: "";
   position: absolute;
   height: 14px;

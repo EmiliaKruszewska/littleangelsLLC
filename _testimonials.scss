@@ -7,17 +7,18 @@ main{
         q{
             color: $nav-font-color;
 
-            &::after{
-                content:"";
-                position: absolute;
-                height:14px;
-                width:14px;
-                background: $navigation-color;
-                left:8%;
-                bottom:-5px;
-                transform: rotate(45deg);
-                z-index: 99;
-            }
+           
+        }
+        &::after{
+            content:"";
+            position: absolute;
+            height:14px;
+            width:14px;
+            background: $navigation-color;
+            left:8%;
+            bottom:-5px;
+            transform: rotate(45deg);
+            z-index: 99;
         }
         }
         
