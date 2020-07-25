@@ -80,8 +80,11 @@ body, html {
               color: $nav-font-color;
               text-decoration: none;
               letter-spacing: 2px;
+              transition: 0.3s;
               
-              
+             &:hover{
+               color:darken($nav-font-color,15%);
+             } 
             }
           // initial li:hover
           &:hover {

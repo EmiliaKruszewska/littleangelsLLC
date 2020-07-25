@@ -112,14 +112,19 @@
             <p class="px-5 py-3">Hello my name is Ewa and I am the owner of the Agency Little Angels Home Care LLC, in Shelton CT from which we provide elderly care in the whole state of Connecticut. I always try to find the best Aid for each client, because every client have different needs and expectations. We provide both live-in and hourly care for your loved ones. We accept Long-term life insurance and private pay. Little Angels LLC is Insure, Bond, and have Work Comp. So contact us we WILL HELP YOU.</p>
             
             
-            <form action="">
+            <form action="" id="myForm">
                 
-                    <input type="text" class="input" name="name" id="name" placeholder="Name"><br>
-                    <input type="email" class="input" name="email" id="email" placeholder="E-mail"><br>
-                    <input type="text" class="input" name="phone" id="phone" placeholder="Phone number"><br>
-                    <input type="text" class="input" name="subject" id="subject" placeholder="Subject"><br>
+                    <input type="text" name="your-name" data-error="
+                    Please enter your first name." placeholder="Name"><br>
+                    <input type="email" name="your-email" data-error="
+                    Please enter your e-mail address." placeholder="E-mail"><br>
+                    <input type="text" name="your-phone" data-error="
+                    Please enter your phone number." placeholder="Phone number"><br>
+                    <input type="text" name="subject" data-error="
+                    Please enter your subject." placeholder="Subject"><br>
                
-                    <textarea name="message" id="message" placeholder="Your message"></textarea><br>
+                    <textarea name="message" data-error="
+                    Please enter your message text." placeholder="Your message"></textarea><br>
               
                 <input id="submit" type="submit" value="Send!">
                 

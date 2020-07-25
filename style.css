@@ -105,6 +105,12 @@ header .navigation .menu .menu-item a {
   color: #ffcb9a;
   text-decoration: none;
   letter-spacing: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .navigation .menu .menu-item a:hover {
+  color: #ffa44e;
 }
 
 header .navigation .menu .menu-item:hover {
@@ -748,6 +754,8 @@ main form input, main form textarea {
   border: 1px solid #15797c;
   color: #ffcb9a;
   outline: none;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 main form input::-webkit-input-placeholder, main form textarea::-webkit-input-placeholder {
@@ -769,5 +777,21 @@ main form input::placeholder, main form textarea::placeholder {
 main form input:focus, main form input:hover, main form textarea:focus, main form textarea:hover {
   background-color: #15797c;
   border: 1px solid #15797c;
+}
+
+main .form-validation {
+  color: red;
+  text-align: center;
+  list-style: none;
+}
+
+@media (max-width: 500px) {
+  main form {
+    width: 280px;
+    left: calc(50% - 140px);
+  }
+  main form input, main form textarea {
+    width: 280px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
