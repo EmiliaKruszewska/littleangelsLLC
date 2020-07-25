@@ -729,4 +729,45 @@ main .cloud::after {
           transform: rotate(45deg);
   z-index: 99;
 }
+
+main p {
+  line-height: 30px;
+}
+
+main form {
+  background-color: #116466;
+  width: 500px;
+  position: relative;
+  left: calc(50% - 250px);
+}
+
+main form input, main form textarea {
+  width: inherit;
+  padding: 20px 20px;
+  background-color: transparent;
+  border: 1px solid #15797c;
+  color: #ffcb9a;
+  outline: none;
+}
+
+main form input::-webkit-input-placeholder, main form textarea::-webkit-input-placeholder {
+  color: #ffd8b4;
+}
+
+main form input:-ms-input-placeholder, main form textarea:-ms-input-placeholder {
+  color: #ffd8b4;
+}
+
+main form input::-ms-input-placeholder, main form textarea::-ms-input-placeholder {
+  color: #ffd8b4;
+}
+
+main form input::placeholder, main form textarea::placeholder {
+  color: #ffd8b4;
+}
+
+main form input:focus, main form input:hover, main form textarea:focus, main form textarea:hover {
+  background-color: #15797c;
+  border: 1px solid #15797c;
+}
 /*# sourceMappingURL=style.css.map */
