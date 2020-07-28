@@ -633,6 +633,40 @@ main .info .icons p {
   padding: 10px 15px;
 }
 
+main .rating {
+  width: 100%;
+}
+
+main .rating .rating-box {
+  -ms-flex-preferred-size: calc(100% * 0.35);
+      flex-basis: calc(100% * 0.35);
+  height: 300px;
+}
+
+main .rating .rating-box p {
+  text-align: center;
+  line-height: 300px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffcb9a;
+  font-size: 1.5em;
+  text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.7);
+  padding: 0 15px;
+}
+
+main .rating .rating-box:nth-of-type(1) {
+  background-color: #116466;
+}
+
+main .rating .rating-box:nth-of-type(2) {
+  background-color: #0a393a;
+}
+
+main .rating .rating-box:nth-of-type(3) {
+  background-color: #188f92;
+}
+
 footer {
   background-color: #0a393a;
 }
