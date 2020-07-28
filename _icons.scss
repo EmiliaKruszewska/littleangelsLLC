@@ -1,0 +1,22 @@
+main{
+    .info{
+        .icons{
+            align-items: baseline;
+            img{
+                width:100px;
+                text-align: center;
+                margin:0;
+            }
+            h5{
+                color: $navigation-color;
+                font-family: $playfair-display;
+                font-weight: 700;
+                letter-spacing: 2px;
+                align-items: baseline;
+            }
+            p{
+                padding: 10px 15px;
+            }
+        }
+    }
+}
