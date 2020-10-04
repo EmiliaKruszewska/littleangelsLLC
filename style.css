@@ -646,7 +646,6 @@ main .rating .rating-box {
 main .rating .rating-box p {
   text-align: center;
   line-height: 300px;
-  font-family: "Playfair Display", serif;
   font-weight: 700;
   letter-spacing: 2px;
   color: #ffcb9a;
@@ -794,7 +793,7 @@ main .cloud::after {
   bottom: -5px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  z-index: 99;
+  z-index: 97;
 }
 
 main p {
